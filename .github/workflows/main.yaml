@@ -13,4 +13,4 @@ jobs:
           echo Imag teg is: $TAG
           docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_PASSWORD }}
           docker build --build-arg BUILD_VERSION=$TAG -t gkarthics/go-build-versioning:$TAG .
-          docker push gkarthics/gh-go-build-versioning
+          docker push gkarthics/go-build-versioning
